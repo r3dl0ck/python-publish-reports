@@ -19,6 +19,10 @@ class Tests(unittest.TestCase):
         res = self.app.get('/null')
         assert res.status == '404 NOT FOUND'
 
+    def test_ALWAYS_FAIL(self):
+        '''test_ALWAYS_FAIL: this test will always fail'''
+        assert False
+
 
 if __name__ == "__main__":
     unittest.main()
