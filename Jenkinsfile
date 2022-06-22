@@ -48,7 +48,7 @@ pipeline {
 
             junit allowEmptyResults: true, testResults: 'pylint_junit.xml'
 
-//             cobertura coberturaReportFile: 'coverage.xml'
+            cobertura coberturaReportFile: 'coverage.xml'
         }
     }
 }
