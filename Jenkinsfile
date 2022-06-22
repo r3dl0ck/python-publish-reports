@@ -44,9 +44,9 @@ pipeline {
         always {
             sh 'venv/bin/coverage xml'
 
-            junit allowEmptyResults: true, testResults: 'pytest_junit.xml'
+//             junit allowEmptyResults: true, testResults: 'pytest_junit.xml'
 
-            junit allowEmptyResults: true, testResults: 'pylint_junit.xml'
+//             junit allowEmptyResults: true, testResults: 'pylint_junit.xml'
 
             cobertura coberturaReportFile: 'coverage.xml'
         }
